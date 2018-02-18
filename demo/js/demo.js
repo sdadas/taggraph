@@ -48,6 +48,7 @@ var Application = /** @class */ (function () {
                 _this.onSearch(_this.search.value);
             }
         });
+        $(this.search).bind('typeahead:select', function () { return _this.onSearch(_this.search.value); });
         $(this.headerCheckbox).on("change", function (event) {
             var container = $("#container");
             if (_this.headerCheckbox.checked) {

@@ -66,6 +66,7 @@ class Application {
                 this.onSearch(this.search.value);
             }
         });
+        $(this.search).bind('typeahead:select', () => this.onSearch(this.search.value));
         $(this.headerCheckbox).on("change", (event: any) => {
             let container: any = $("#container");
             if(this.headerCheckbox.checked) {
