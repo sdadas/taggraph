@@ -108,4 +108,8 @@ a:hover {
     .hide-mobile {
         display: none !important;
     }
+
+    #search_tag {
+        max-width: 70%;
+    }
 }
