@@ -63,7 +63,6 @@ var Application = /** @class */ (function () {
         if (nodes.length === 0)
             return;
         var node = nodes[0];
-        console.log(node);
         var ratio = Math.min(node.size, 20) / 400.0;
         this.sigma.camera.goTo({ x: node["read_cam0:x"], y: node["read_cam0:y"], ratio: ratio });
     };

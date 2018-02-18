@@ -103,3 +103,9 @@ a:hover {
 .tt-suggestion p {
     margin: 0;
 }
+
+@media (max-width: 780px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
