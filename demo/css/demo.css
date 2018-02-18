@@ -104,7 +104,7 @@ a:hover {
     margin: 0;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1000px) {
     .hide-mobile {
         display: none !important;
     }
