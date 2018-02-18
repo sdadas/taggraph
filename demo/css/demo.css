@@ -49,8 +49,9 @@ a:hover {
     background: rgb(53, 71, 79) !important;
     border: none;
     color: #aaa;
-    padding-left: 10px;
     vertical-align: inherit !important;
+    margin:0;
+    padding: 0 10px;
 }
 
 .twitter-typeahead .tt-query,
