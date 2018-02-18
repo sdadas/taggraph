@@ -76,7 +76,9 @@ class Application {
                 container.show();
             }
         });
-        this.sigma.bind("doubleClickNode", (node: any) => window.location.href = "https://www.wykop.pl/tag/" + node.id);
+        this.sigma.bind("doubleClickNode", (event: any) => {
+            window.location.href = "https://www.wykop.pl/tag/" + event.data.node.id
+        });
     }
 
     onSearch(tag: string) {
