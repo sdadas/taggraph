@@ -58,6 +58,7 @@ var Application = /** @class */ (function () {
                 container.show();
             }
         });
+        this.sigma.bind("doubleClickNode", function (node) { return window.location.href = "https://www.wykop.pl/tag/" + node.id; });
     };
     Application.prototype.onSearch = function (tag) {
         var nodes = this.sigma.graph.nodes().filter(function (el) { return el.id === tag; });

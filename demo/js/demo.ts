@@ -3,6 +3,7 @@ interface Sigma {
     graph: any;
     camera: any;
     refresh: Function;
+    bind: Function;
 }
 
 declare var sigma: Sigma;
@@ -75,6 +76,7 @@ class Application {
                 container.show();
             }
         });
+        this.sigma.bind("doubleClickNode", (node: any) => window.location.href = "https://www.wykop.pl/tag/" + node.id);
     }
 
     onSearch(tag: string) {
